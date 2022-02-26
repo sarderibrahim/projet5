@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+/*----------Responsive-Menu-1024px----------*/
+@media screen and (max-width: 1024px) {
+  .item {
+    width: 55%; }
+    .item img {
+      height: 240px; } }
+
+/*----------Responsive-Menu-745px----------*/
+@media screen and (max-width: 780px) {
+  th {
+    visibility: hidden; }
+  td {
+    display: flex;
+    flex-direction: column; }
+  .item img {
+    height: 200px; } }
+
+@media screen and (max-width: 660px) {
+  header ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px; }
+  .item img {
+    height: 150px; } }
+
+/*----------Responsive-Menu-450px----------*/
+@media screen and (max-width: 550px) {
+  .component {
+    text-align: center;
+    font-size: 15px; }
+  .item img {
+    height: 100px; }
+  .addCart {
+    font-size: 10px; } }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f3e9f1; }
+  header img {
+    border-radius: 8px; }
+  header nav {
+    margin-top: 50px; }
+    header nav .icon {
+      display: flex;
+      list-style-type: none;
+      font-size: 25px; }
+      header nav .icon__description {
+        display: flex;
+        padding: 0 15px 0 15px; }
+        header nav .icon__description i {
+          margin-left: 10px; }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f3e9f1;
+  width: 100%; }
+  footer a {
+    padding: 20px 0 20px 0; }
+
+/*==================== Contenu principal 4 pages html ====================*/
+* {
+  font-family: 'karmaGeorgia, serif, sans-serif';
+  margin: 0;
+  padding: 0; }
+
+body {
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+main h1, main p, main h2, main h3, main .puce {
+  padding: 20px;
+  display: flex;
+  justify-content: center; }
+
+/*==================== Page index ====================*/
+/*---------- Articles ----------*/
+.item {
+  width: 45%;
+  margin: auto;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  background: linear-gradient(to bottom right, #ca7b4dd2, #915cf3ce, #5c78f3ce);
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px 0px #000000;
+  list-style: none; }
+  .item .row {
+    display: flex;
+    justify-content: center; }
+
+/*==================== Page produit ====================*/
+/*---------- Articles ----------*/
+#item__details {
+  width: 45%;
+  margin: auto;
+  background: linear-gradient(to bottom right, #ca7b4dd2, #915cf3ce, #5c78f3ce);
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px 0px #000000; }
+  #item__details h3 {
+    margin: 10px 30% 10px 30%;
+    border-radius: 10px;
+    padding: 10px; }
+  #item__details .section__choice {
+    width: 20%; }
+
+/*==================== Page panier ====================*/
+/*---------- Contenue ----------*/
+#item__select {
+  width: 90%;
+  margin: auto;
+  background: linear-gradient(to bottom right, #ca7b4dd2, #915cf3ce, #5c78f3ce);
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px 0px #000000; }
+
+/*---------- Détail articles tableaux ----------*/
+table {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  table th {
+    padding: 0 50px 0 30px; }
+  table td {
+    padding: 20px 20px 0 20px; }
+
+thead {
+  margin: 0 110px 0 20px; }
+
+/*---------- Formulaire ----------*/
+.details__form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+  background: linear-gradient(to top right, #ca7b4dd2, #915cf3ce);
+  color: #ffffff;
+  box-shadow: 0px 0px 12px 2px #c4c5c5;
+  border-radius: 10px; }
+
+/*==================== Nombres d'articles ====================*/
+.item__number {
+  display: inline-block;
+  border-radius: 5rem;
+  position: relative;
+  top: 0px;
+  left: 5px;
+  right: 0px;
+  height: 20px;
+  font-size: 1rem;
+  text-align: center; }
+
+/*==================== confirmation commande ====================*/
+#order__confirmed {
+  background: linear-gradient(to top right, #ca7b4dd2, #915cf3ce);
+  height: 48rem; }
